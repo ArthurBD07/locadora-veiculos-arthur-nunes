@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System.ComponentModel.DataAnnotations;
 
 namespace LocadoraVeiculos.Models;
@@ -14,5 +16,7 @@ public class Categoria
     [MaxLength(200)]
     public string? Descricao { get; set; }
 
+    [JsonIgnore]
+    [ValidateNever]
     public ICollection<Veiculo> Veiculos { get; set; } = new List<Veiculo>();
 }

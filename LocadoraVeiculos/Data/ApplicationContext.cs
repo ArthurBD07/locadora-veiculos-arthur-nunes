@@ -18,25 +18,28 @@ public class ApplicationContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Cliente>().HasIndex(c => c.Cpf).IsUnique();
+        modelBuilder.Entity<Cliente>().HasIndex(c => c.Email).IsUnique();
+        modelBuilder.Entity<Veiculo>().HasIndex(v => v.Placa).IsUnique();
         modelBuilder.Entity<Veiculo>()
             .HasOne(veiculo => veiculo.Fabricante)
             .WithMany(fabricante => fabricante.Veiculos)
-            .HasForeignKey(veiculo => veiculo.FabricanteId);
+            .HasForeignKey(veiculo => veiculo.FabricanteId).OnDelete(DeleteBehavior.Restrict);
 
         modelBuilder.Entity<Veiculo>()
             .HasOne(veiculo => veiculo.Categoria)
             .WithMany(categoria => categoria.Veiculos)
-            .HasForeignKey(veiculo => veiculo.CategoriaId);
+            .HasForeignKey(veiculo => veiculo.CategoriaId).OnDelete(DeleteBehavior.Restrict);
 
         modelBuilder.Entity<Aluguel>()
             .HasOne(aluguel => aluguel.Cliente)
             .WithMany(cliente => cliente.Alugueis)
-            .HasForeignKey(aluguel => aluguel.ClienteId);
+            .HasForeignKey(aluguel => aluguel.ClienteId).OnDelete(DeleteBehavior.Restrict);
 
         modelBuilder.Entity<Aluguel>()
             .HasOne(aluguel => aluguel.Veiculo)
             .WithMany(veiculo => veiculo.Alugueis)
-            .HasForeignKey(aluguel => aluguel.VeiculoId);
+            .HasForeignKey(aluguel => aluguel.VeiculoId).OnDelete(DeleteBehavior.Restrict);
 
         modelBuilder.Entity<Veiculo>()
             .Property(veiculo => veiculo.Quilometragem)
