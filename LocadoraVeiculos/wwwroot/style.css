@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+.navlink {display:block;color:#c8d5df;text-decoration:none;padding:12px 10px;margin-top:10px;border-radius:7px;font-weight:600;font-size:14px}
+.navlink:hover,.navlink.active {background:#254453;color:white}
+#query {display:flex;gap:18px;flex-wrap:wrap;align-items:end}
+#parameters {display:flex;gap:18px;flex:2;flex-wrap:wrap}
+#description {color:#63758a;font-size:13px}
 body {
   margin: 0;
   background: #f5f7fa;
