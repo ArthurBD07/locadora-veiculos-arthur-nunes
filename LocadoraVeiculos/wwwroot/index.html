@@ -1,1 +1,63 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Locadora • Gestão</title><link rel="stylesheet" href="style.css"></head><body><aside><a class="brand" href="#">↗ LOCADORA</a><p>PAINEL DE GESTÃO</p><nav aria-label="Cadastros"></nav><footer>Arthur Nunes<br>Trabalho Prático 2</footer></aside><main><header><span>OPERAÇÃO / CADASTROS</span><span>Locadora de veículos</span></header><section class="heading"><div><p>CONTROLE DA OPERAÇÃO</p><h1></h1><p id="subtitle">Consulte e organize seus registros.</p></div><button id="new">+ Novo registro</button></section><div id="message" role="status" aria-live="polite"></div><form id="filters" class="panel"></form><section class="panel"><div class="tablehead"><h2>Registros</h2><span id="count"></span></div><div class="scroll"><table><thead></thead><tbody></tbody></table></div><p id="empty" hidden>Nenhum registro encontrado. Ajuste os filtros ou cadastre um novo registro.</p></section></main><dialog><form id="editor"><div class="tablehead"><h2 id="dialogTitle"></h2><button type="button" id="close" class="secondary">Fechar</button></div><div id="fields"></div><p id="formError" role="alert"></p><div class="actions"><button type="button" id="cancel" class="secondary">Cancelar</button><button id="save">Salvar registro</button></div></form></dialog><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Locadora • Gestão</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside>
+      <a class="brand" href="#">↗ LOCADORA</a>
+      <p>PAINEL DE GESTÃO</p>
+      <nav aria-label="Cadastros"></nav>
+      <footer>Arthur Nunes<br />Trabalho Prático 2</footer>
+    </aside>
+    <main>
+      <header>
+        <span>OPERAÇÃO / CADASTROS</span><span>Locadora de veículos</span>
+      </header>
+      <section class="heading">
+        <div>
+          <p>CONTROLE DA OPERAÇÃO</p>
+          <h1></h1>
+          <p id="subtitle">Consulte e organize seus registros.</p>
+        </div>
+        <button id="new">+ Novo registro</button>
+      </section>
+      <div id="message" role="status" aria-live="polite"></div>
+      <form id="filters" class="panel"></form>
+      <section class="panel">
+        <div class="tablehead">
+          <h2>Registros</h2>
+          <span id="count"></span>
+        </div>
+        <div class="scroll">
+          <table>
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p id="empty" hidden>
+          Nenhum registro encontrado. Ajuste os filtros ou cadastre um novo
+          registro.
+        </p>
+      </section>
+    </main>
+    <dialog>
+      <form id="editor">
+        <div class="tablehead">
+          <h2 id="dialogTitle"></h2>
+          <button type="button" id="close" class="secondary">Fechar</button>
+        </div>
+        <div id="fields"></div>
+        <p id="formError" role="alert"></p>
+        <div class="actions">
+          <button type="button" id="cancel" class="secondary">Cancelar</button
+          ><button id="save">Salvar registro</button>
+        </div>
+      </form>
+    </dialog>
+    <script src="app.js"></script>
+  </body>
+</html>

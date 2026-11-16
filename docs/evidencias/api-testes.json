@@ -1,0 +1,413 @@
+{
+  "date": "2026-11-16T23:33:57.485Z",
+  "base": "http://localhost:5081",
+  "database": "LocadoraTP2_Express_Validacao_20261116",
+  "result": "passed",
+  "checks": [
+    {
+      "method": "POST",
+      "path": "fabricantes",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "categorias",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "clientes",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "veiculos",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "alugueis",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "fabricantes/1",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "fabricantes/1",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "fabricantes/1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "fabricantes?nome=72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "fabricantes?nome=INEXISTENTE_72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "fabricantes?fabricanteId=1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "fabricantes?fabricanteId=2147483647",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "fabricantes?nome=72034172&fabricanteId=1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "fabricantes?nome=INEXISTENTE_72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "categorias/1",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "categorias/1",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "categorias/1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "categorias?nome=72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "categorias?nome=INEXISTENTE_72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "categorias?descricao=72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "categorias?descricao=INEXISTENTE_72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "categorias?nome=72034172&descricao=72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "categorias?nome=INEXISTENTE_72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "clientes/1",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "clientes/1",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "clientes/1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "clientes?nome=72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "clientes?nome=INEXISTENTE_72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "clientes?cpf=12372034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "clientes?cpf=INEXISTENTE_72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "clientes?email=teste72034172%40example.com",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "clientes?email=INEXISTENTE_72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "clientes?nome=72034172&cpf=12372034172&email=teste72034172%40example.com",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "clientes?nome=INEXISTENTE_72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos/1",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "veiculos/1",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "veiculos/1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos?modelo=72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos?modelo=INEXISTENTE_72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos?placa=TPA4172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos?placa=INEXISTENTE_72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos?fabricanteId=1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos?fabricanteId=2147483647",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos?categoriaId=1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos?categoriaId=2147483647",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos?modelo=72034172&placa=TPA4172&fabricanteId=1&categoriaId=1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos?modelo=INEXISTENTE_72034172",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "alugueis/1",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "alugueis/1",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "alugueis/1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "alugueis?clienteId=1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "alugueis?clienteId=2147483647",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "alugueis?veiculoId=1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "alugueis?veiculoId=2147483647",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "alugueis?dataRetirada=2026-11-16T00%3A00%3A00",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "alugueis?dataRetirada=2099-01-01T00%3A00%3A00",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "alugueis?dataPrevistaDevolucao=2026-11-20T00%3A00%3A00",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "alugueis?dataPrevistaDevolucao=1900-01-01T00%3A00%3A00",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "alugueis?clienteId=1&veiculoId=1&dataRetirada=2026-11-16T00%3A00%3A00&dataPrevistaDevolucao=2026-11-20T00%3A00%3A00",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "alugueis?clienteId=2147483647",
+      "status": 200
+    },
+    {
+      "method": "DELETE",
+      "path": "clientes/1",
+      "status": 409
+    },
+    {
+      "method": "DELETE",
+      "path": "veiculos/1",
+      "status": 409
+    },
+    {
+      "method": "DELETE",
+      "path": "categorias/1",
+      "status": 409
+    },
+    {
+      "method": "DELETE",
+      "path": "fabricantes/1",
+      "status": 409
+    },
+    {
+      "method": "POST",
+      "path": "clientes",
+      "status": 409
+    },
+    {
+      "method": "POST",
+      "path": "clientes",
+      "status": 400
+    },
+    {
+      "method": "POST",
+      "path": "veiculos",
+      "status": 400
+    },
+    {
+      "method": "POST",
+      "path": "alugueis",
+      "status": 400
+    },
+    {
+      "method": "POST",
+      "path": "alugueis",
+      "status": 400
+    },
+    {
+      "method": "PUT",
+      "path": "clientes/1",
+      "status": 400
+    },
+    {
+      "method": "GET",
+      "path": "clientes/2147483647",
+      "status": 404
+    },
+    {
+      "method": "DELETE",
+      "path": "alugueis/1",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "alugueis/1",
+      "status": 404
+    },
+    {
+      "method": "DELETE",
+      "path": "veiculos/1",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "veiculos/1",
+      "status": 404
+    },
+    {
+      "method": "DELETE",
+      "path": "clientes/1",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "clientes/1",
+      "status": 404
+    },
+    {
+      "method": "DELETE",
+      "path": "categorias/1",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "categorias/1",
+      "status": 404
+    },
+    {
+      "method": "DELETE",
+      "path": "fabricantes/1",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "fabricantes/1",
+      "status": 404
+    }
+  ]
+}
