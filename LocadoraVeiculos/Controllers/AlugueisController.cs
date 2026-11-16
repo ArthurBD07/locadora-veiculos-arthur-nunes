@@ -14,8 +14,15 @@ public class AlugueisController : ControllerBase
     public AlugueisController(ApplicationContext context) => _context = context;
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Aluguel>>> GetTodos() =>
-        Ok(await _context.Alugueis.AsNoTracking().OrderBy(x => x.AluguelId).ToListAsync());
+    public async Task<ActionResult<IEnumerable<Aluguel>>> GetTodos(int? clienteId, int? veiculoId, DateTime? dataRetirada, DateTime? dataPrevistaDevolucao)
+    {
+        var query = _context.Alugueis.AsNoTracking().AsQueryable();
+        if (clienteId.HasValue) query = query.Where(x => x.ClienteId == clienteId);
+        if (veiculoId.HasValue) query = query.Where(x => x.VeiculoId == veiculoId);
+        if (dataRetirada.HasValue) query = query.Where(x => x.DataRetirada >= dataRetirada);
+        if (dataPrevistaDevolucao.HasValue) query = query.Where(x => x.DataPrevistaDevolucao <= dataPrevistaDevolucao);
+        return Ok(await query.OrderBy(x => x.AluguelId).ToListAsync());
+    }
 
     [HttpGet("{id:int}")]
     public async Task<ActionResult<Aluguel>> GetPorId(int id)

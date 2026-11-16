@@ -14,8 +14,13 @@ public class FabricantesController : ControllerBase
     public FabricantesController(ApplicationContext context) => _context = context;
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Fabricante>>> GetTodos() =>
-        Ok(await _context.Fabricantes.AsNoTracking().OrderBy(x => x.FabricanteId).ToListAsync());
+    public async Task<ActionResult<IEnumerable<Fabricante>>> GetTodos(string? nome, int? fabricanteId)
+    {
+        var query = _context.Fabricantes.AsNoTracking().AsQueryable();
+        if (!string.IsNullOrWhiteSpace(nome)) query = query.Where(x => x.Nome.Contains(nome));
+        if (fabricanteId.HasValue) query = query.Where(x => x.FabricanteId == fabricanteId);
+        return Ok(await query.OrderBy(x => x.FabricanteId).ToListAsync());
+    }
 
     [HttpGet("{id:int}")]
     public async Task<ActionResult<Fabricante>> GetPorId(int id)

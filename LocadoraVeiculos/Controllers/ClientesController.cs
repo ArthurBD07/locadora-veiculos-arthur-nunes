@@ -14,8 +14,14 @@ public class ClientesController : ControllerBase
     public ClientesController(ApplicationContext context) => _context = context;
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Cliente>>> GetTodos() =>
-        Ok(await _context.Clientes.AsNoTracking().OrderBy(x => x.ClienteId).ToListAsync());
+    public async Task<ActionResult<IEnumerable<Cliente>>> GetTodos(string? nome, string? cpf, string? email)
+    {
+        var query = _context.Clientes.AsNoTracking().AsQueryable();
+        if (!string.IsNullOrWhiteSpace(nome)) query = query.Where(x => x.Nome.Contains(nome));
+        if (!string.IsNullOrWhiteSpace(cpf)) query = query.Where(x => x.Cpf.Contains(cpf));
+        if (!string.IsNullOrWhiteSpace(email)) query = query.Where(x => x.Email.Contains(email));
+        return Ok(await query.OrderBy(x => x.ClienteId).ToListAsync());
+    }
 
     [HttpGet("{id:int}")]
     public async Task<ActionResult<Cliente>> GetPorId(int id)

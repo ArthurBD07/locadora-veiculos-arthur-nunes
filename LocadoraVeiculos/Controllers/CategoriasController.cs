@@ -14,8 +14,13 @@ public class CategoriasController : ControllerBase
     public CategoriasController(ApplicationContext context) => _context = context;
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Categoria>>> GetTodos() =>
-        Ok(await _context.Categorias.AsNoTracking().OrderBy(x => x.CategoriaId).ToListAsync());
+    public async Task<ActionResult<IEnumerable<Categoria>>> GetTodos(string? nome, string? descricao)
+    {
+        var query = _context.Categorias.AsNoTracking().AsQueryable();
+        if (!string.IsNullOrWhiteSpace(nome)) query = query.Where(x => x.Nome.Contains(nome));
+        if (!string.IsNullOrWhiteSpace(descricao)) query = query.Where(x => x.Descricao != null && x.Descricao.Contains(descricao));
+        return Ok(await query.OrderBy(x => x.CategoriaId).ToListAsync());
+    }
 
     [HttpGet("{id:int}")]
     public async Task<ActionResult<Categoria>> GetPorId(int id)

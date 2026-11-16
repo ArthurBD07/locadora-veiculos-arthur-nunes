@@ -14,8 +14,15 @@ public class VeiculosController : ControllerBase
     public VeiculosController(ApplicationContext context) => _context = context;
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Veiculo>>> GetTodos() =>
-        Ok(await _context.Veiculos.AsNoTracking().OrderBy(x => x.VeiculoId).ToListAsync());
+    public async Task<ActionResult<IEnumerable<Veiculo>>> GetTodos(string? modelo, string? placa, int? fabricanteId, int? categoriaId)
+    {
+        var query = _context.Veiculos.AsNoTracking().AsQueryable();
+        if (!string.IsNullOrWhiteSpace(modelo)) query = query.Where(x => x.Modelo.Contains(modelo));
+        if (!string.IsNullOrWhiteSpace(placa)) query = query.Where(x => x.Placa.Contains(placa));
+        if (fabricanteId.HasValue) query = query.Where(x => x.FabricanteId == fabricanteId);
+        if (categoriaId.HasValue) query = query.Where(x => x.CategoriaId == categoriaId);
+        return Ok(await query.OrderBy(x => x.VeiculoId).ToListAsync());
+    }
 
     [HttpGet("{id:int}")]
     public async Task<ActionResult<Veiculo>> GetPorId(int id)
