@@ -283,11 +283,22 @@ function openEditor(item = null, readonly = false) {
   $("#save").disabled = false;
   $("dialog").showModal();
 }
+function confirmDeletion(message) {
+  const dialog = $("#confirmDelete");
+  $("#deleteMessage").textContent = message;
+  dialog.returnValue = "";
+  return new Promise(resolve => {
+    dialog.addEventListener("close", () => resolve(dialog.returnValue === "confirm"), { once: true });
+    dialog.showModal();
+  });
+}
+$("#deleteCancel").onclick = () => $("#confirmDelete").close("cancel");
+$("#deleteConfirm").onclick = () => $("#confirmDelete").close("confirm");
 async function remove(item) {
   if (
-    !confirm(
+    !(await confirmDeletion(
       `Excluir o registro #${item[entities[current].id]} de ${entities[current].title}? Esta ação não pode ser desfeita.`,
-    )
+    ))
   )
     return;
   try {
