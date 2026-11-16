@@ -1,0 +1,50 @@
+{
+  "fabricantes": [
+    {
+      "FabricanteId": 2,
+      "Nome": "Fabricante Demo Arthur 1210"
+    },
+    {
+      "FabricanteId": 3,
+      "Nome": "Fabricante Demo Sem Veiculo 1210"
+    }
+  ],
+  "categorias": [
+    {
+      "CategoriaId": 2,
+      "Nome": "Categoria Demo 1210",
+      "Descricao": "Categoria de teste para demonstracao"
+    }
+  ],
+  "clientes": [
+    {
+      "ClienteId": 1002,
+      "Nome": "Cliente Demo Arthur ATUALIZADO",
+      "Cpf": "92847160530",
+      "Email": "demo.arthur.1210@example.com"
+    }
+  ],
+  "veiculos": [
+    {
+      "VeiculoId": 2,
+      "Modelo": "Veiculo Demo Arthur",
+      "AnoFabricacao": 2024,
+      "Quilometragem": 15000.0,
+      "Placa": "TPA1N26",
+      "FabricanteId": 2,
+      "CategoriaId": 2
+    }
+  ],
+  "alugueis": [
+    {
+      "AluguelId": 2,
+      "DataRetirada": "2026-10-12T09:00:00",
+      "DataPrevistaDevolucao": "2026-10-15T09:00:00",
+      "KmInicial": 15000.0,
+      "ValorDiaria": 120.0,
+      "ValorTotal": 360.0,
+      "ClienteId": 1002,
+      "VeiculoId": 2
+    }
+  ]
+}

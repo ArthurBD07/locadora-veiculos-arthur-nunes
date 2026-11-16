@@ -7,3 +7,5 @@ docs/*.log
 docs/*.aux
 docs/*.out
 docs/*.xdv
+scripts/*-local.log
+scripts/servidor-erros.log
