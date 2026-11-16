@@ -15,3 +15,7 @@ Capturas: interface-clientes.jpg, interface-mobile.jpg, interface-alugueis.jpg e
 ## Validação adicional no SQL Express
 
 A aplicação foi executada em http://localhost:5081 com o banco separado LocadoraTP2_Express_Validacao_20261116. Um cliente fictício foi cadastrado visualmente; a listagem confirmou o salvamento e a consulta SQL direta encontrou o mesmo nome/e-mail. Evidências: interface-sql-express.jpg e sql-express-persistencia.txt. A instalação terminou com resultado Aprovado e código 0, conforme o resumo do instalador Microsoft. A bateria HTTP teve 81 verificações aprovadas também nessa instância.
+
+## Conferência após o recebimento do enunciado
+
+As sete consultas originais foram selecionadas e executadas visualmente, com resultados reais dos dados fictícios do TP1. Foram verificados estado vazio e erro de período invertido. A tela de consultas foi inspecionada em tamanho de celular. A confirmação de exclusão passou a ser um diálogo explícito da aplicação; foi aberta e cancelada, mantendo o registro. O iniciador Abrir-Locadora.cmd foi executado com servidor desligado e abriu o navegador após compilar e preparar os dados. Depois disso, as baterias de 81 e 16 verificações passaram novamente.

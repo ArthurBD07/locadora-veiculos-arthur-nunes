@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-16T23:33:57.485Z",
+  "date": "2026-11-16T23:53:54.308Z",
   "base": "http://localhost:5081",
   "database": "LocadoraTP2_Express_Validacao_20261116",
   "result": "passed",
@@ -31,32 +31,32 @@
     },
     {
       "method": "GET",
-      "path": "fabricantes/1",
+      "path": "fabricantes/4",
       "status": 200
     },
     {
       "method": "PUT",
-      "path": "fabricantes/1",
+      "path": "fabricantes/4",
       "status": 204
     },
     {
       "method": "GET",
-      "path": "fabricantes/1",
+      "path": "fabricantes/4",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "fabricantes?nome=72034172",
+      "path": "fabricantes?nome=73232425",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "fabricantes?nome=INEXISTENTE_72034172",
+      "path": "fabricantes?nome=INEXISTENTE_73232425",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "fabricantes?fabricanteId=1",
+      "path": "fabricantes?fabricanteId=4",
       "status": 200
     },
     {
@@ -66,152 +66,152 @@
     },
     {
       "method": "GET",
-      "path": "fabricantes?nome=72034172&fabricanteId=1",
+      "path": "fabricantes?nome=73232425&fabricanteId=4",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "fabricantes?nome=INEXISTENTE_72034172",
+      "path": "fabricantes?nome=INEXISTENTE_73232425",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "categorias/1",
-      "status": 200
-    },
-    {
-      "method": "PUT",
-      "path": "categorias/1",
-      "status": 204
-    },
-    {
-      "method": "GET",
-      "path": "categorias/1",
-      "status": 200
-    },
-    {
-      "method": "GET",
-      "path": "categorias?nome=72034172",
-      "status": 200
-    },
-    {
-      "method": "GET",
-      "path": "categorias?nome=INEXISTENTE_72034172",
-      "status": 200
-    },
-    {
-      "method": "GET",
-      "path": "categorias?descricao=72034172",
-      "status": 200
-    },
-    {
-      "method": "GET",
-      "path": "categorias?descricao=INEXISTENTE_72034172",
-      "status": 200
-    },
-    {
-      "method": "GET",
-      "path": "categorias?nome=72034172&descricao=72034172",
-      "status": 200
-    },
-    {
-      "method": "GET",
-      "path": "categorias?nome=INEXISTENTE_72034172",
-      "status": 200
-    },
-    {
-      "method": "GET",
-      "path": "clientes/1",
+      "path": "categorias/3",
       "status": 200
     },
     {
       "method": "PUT",
-      "path": "clientes/1",
+      "path": "categorias/3",
       "status": 204
     },
     {
       "method": "GET",
-      "path": "clientes/1",
+      "path": "categorias/3",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "clientes?nome=72034172",
+      "path": "categorias?nome=73232425",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "clientes?nome=INEXISTENTE_72034172",
+      "path": "categorias?nome=INEXISTENTE_73232425",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "clientes?cpf=12372034172",
+      "path": "categorias?descricao=73232425",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "clientes?cpf=INEXISTENTE_72034172",
+      "path": "categorias?descricao=INEXISTENTE_73232425",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "clientes?email=teste72034172%40example.com",
+      "path": "categorias?nome=73232425&descricao=73232425",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "clientes?email=INEXISTENTE_72034172",
+      "path": "categorias?nome=INEXISTENTE_73232425",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "clientes?nome=72034172&cpf=12372034172&email=teste72034172%40example.com",
-      "status": 200
-    },
-    {
-      "method": "GET",
-      "path": "clientes?nome=INEXISTENTE_72034172",
-      "status": 200
-    },
-    {
-      "method": "GET",
-      "path": "veiculos/1",
+      "path": "clientes/4",
       "status": 200
     },
     {
       "method": "PUT",
-      "path": "veiculos/1",
+      "path": "clientes/4",
       "status": 204
     },
     {
       "method": "GET",
-      "path": "veiculos/1",
+      "path": "clientes/4",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "veiculos?modelo=72034172",
+      "path": "clientes?nome=73232425",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "veiculos?modelo=INEXISTENTE_72034172",
+      "path": "clientes?nome=INEXISTENTE_73232425",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "veiculos?placa=TPA4172",
+      "path": "clientes?cpf=12373232425",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "veiculos?placa=INEXISTENTE_72034172",
+      "path": "clientes?cpf=INEXISTENTE_73232425",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "veiculos?fabricanteId=1",
+      "path": "clientes?email=teste73232425%40example.com",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "clientes?email=INEXISTENTE_73232425",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "clientes?nome=73232425&cpf=12373232425&email=teste73232425%40example.com",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "clientes?nome=INEXISTENTE_73232425",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos/3",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "veiculos/3",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "veiculos/3",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos?modelo=73232425",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos?modelo=INEXISTENTE_73232425",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos?placa=TPA2425",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos?placa=INEXISTENTE_73232425",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "veiculos?fabricanteId=4",
       "status": 200
     },
     {
@@ -221,7 +221,7 @@
     },
     {
       "method": "GET",
-      "path": "veiculos?categoriaId=1",
+      "path": "veiculos?categoriaId=3",
       "status": 200
     },
     {
@@ -231,32 +231,32 @@
     },
     {
       "method": "GET",
-      "path": "veiculos?modelo=72034172&placa=TPA4172&fabricanteId=1&categoriaId=1",
+      "path": "veiculos?modelo=73232425&placa=TPA2425&fabricanteId=4&categoriaId=3",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "veiculos?modelo=INEXISTENTE_72034172",
+      "path": "veiculos?modelo=INEXISTENTE_73232425",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "alugueis/1",
+      "path": "alugueis/3",
       "status": 200
     },
     {
       "method": "PUT",
-      "path": "alugueis/1",
+      "path": "alugueis/3",
       "status": 204
     },
     {
       "method": "GET",
-      "path": "alugueis/1",
+      "path": "alugueis/3",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "alugueis?clienteId=1",
+      "path": "alugueis?clienteId=4",
       "status": 200
     },
     {
@@ -266,7 +266,7 @@
     },
     {
       "method": "GET",
-      "path": "alugueis?veiculoId=1",
+      "path": "alugueis?veiculoId=3",
       "status": 200
     },
     {
@@ -296,7 +296,7 @@
     },
     {
       "method": "GET",
-      "path": "alugueis?clienteId=1&veiculoId=1&dataRetirada=2026-11-16T00%3A00%3A00&dataPrevistaDevolucao=2026-11-20T00%3A00%3A00",
+      "path": "alugueis?clienteId=4&veiculoId=3&dataRetirada=2026-11-16T00%3A00%3A00&dataPrevistaDevolucao=2026-11-20T00%3A00%3A00",
       "status": 200
     },
     {
@@ -306,22 +306,22 @@
     },
     {
       "method": "DELETE",
-      "path": "clientes/1",
+      "path": "clientes/4",
       "status": 409
     },
     {
       "method": "DELETE",
-      "path": "veiculos/1",
+      "path": "veiculos/3",
       "status": 409
     },
     {
       "method": "DELETE",
-      "path": "categorias/1",
+      "path": "categorias/3",
       "status": 409
     },
     {
       "method": "DELETE",
-      "path": "fabricantes/1",
+      "path": "fabricantes/4",
       "status": 409
     },
     {
@@ -351,7 +351,7 @@
     },
     {
       "method": "PUT",
-      "path": "clientes/1",
+      "path": "clientes/4",
       "status": 400
     },
     {
@@ -361,52 +361,52 @@
     },
     {
       "method": "DELETE",
-      "path": "alugueis/1",
+      "path": "alugueis/3",
       "status": 204
     },
     {
       "method": "GET",
-      "path": "alugueis/1",
+      "path": "alugueis/3",
       "status": 404
     },
     {
       "method": "DELETE",
-      "path": "veiculos/1",
+      "path": "veiculos/3",
       "status": 204
     },
     {
       "method": "GET",
-      "path": "veiculos/1",
+      "path": "veiculos/3",
       "status": 404
     },
     {
       "method": "DELETE",
-      "path": "clientes/1",
+      "path": "clientes/4",
       "status": 204
     },
     {
       "method": "GET",
-      "path": "clientes/1",
+      "path": "clientes/4",
       "status": 404
     },
     {
       "method": "DELETE",
-      "path": "categorias/1",
+      "path": "categorias/3",
       "status": 204
     },
     {
       "method": "GET",
-      "path": "categorias/1",
+      "path": "categorias/3",
       "status": 404
     },
     {
       "method": "DELETE",
-      "path": "fabricantes/1",
+      "path": "fabricantes/4",
       "status": 204
     },
     {
       "method": "GET",
-      "path": "fabricantes/1",
+      "path": "fabricantes/4",
       "status": 404
     }
   ]

@@ -1,6 +1,6 @@
-param([string]$BaseUrl = 'http://localhost:5081')
+﻿param([string]$BaseUrl = 'http://localhost:5081')
 $ErrorActionPreference = 'Stop'
-$samples = Get-Content (Join-Path $PSScriptRoot 'dados-tp1-demo.json') -Raw | ConvertFrom-Json
+$samples = Get-Content (Join-Path $PSScriptRoot 'dados-tp1-demo.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 $maps = @{}
 foreach ($spec in @(
     @{ Route='fabricantes'; Id='FabricanteId'; Unique='Nome' },

@@ -1,18 +1,40 @@
-# Vídeo de demonstração — duração prevista: 4min40s
+# Pitch individual — roteiro de 4 minutos
 
-Grave a aplicação real, com dados fictícios. O roteiro é apoio: não é evidência de que o vídeo foi gravado. Confira o enunciado original antes de publicar.
+O enunciado exige entre 3 e 5 minutos, com gravação de tela e áudio, abordando problema, modelagem e pelo menos duas consultas e resultados no front-end. Não exige câmera ou rosto nos trechos fornecidos. Não exiba vídeos de terceiros.
 
-| Tempo | Tela e ação | Fala sugerida |
-|---|---|---|
-| 0:00–0:20 | Interface inicial e repositório | “Sou Arthur Nunes Henrique dos Santos. Este é o TP2 da Locadora de Veículos. A interface utiliza a API C# e o banco SQL Server do TP1.” |
-| 0:20–0:50 | Fabricantes: incluir, listar, visualizar, editar, pesquisar nome e ID | “O fabricante possui cadastro, consulta, edição e exclusão. Os filtros são enviados à API.” |
-| 0:50–1:20 | Categorias: incluir, editar, visualizar e pesquisar nome e descrição | “A categoria organiza a frota. Posso combinar os filtros ou limpar a pesquisa.” |
-| 1:20–1:55 | Clientes: incluir dado fictício, visualizar, editar e pesquisar nome/CPF | “Os campos são validados. CPF e e-mail duplicados são rejeitados pelo servidor e pelo banco.” |
-| 1:55–2:30 | Veículos: incluir selecionando fabricante/categoria; editar; pesquisar modelo e placa | “Os relacionamentos usam seletores com nomes. Modelo, placa, fabricante e categoria estão disponíveis para pesquisa.” |
-| 2:30–3:10 | Aluguéis: selecionar cliente e veículo, preencher datas/km/valores, salvar, visualizar e editar; pesquisar cliente e veículo | “As datas e quilometragens são verificadas. O aluguel referencia os registros cadastrados anteriormente.” |
-| 3:10–3:35 | Tentar excluir cliente vinculado; mostrar mensagem; excluir aluguel e demais registros de demonstração em ordem | “Um registro com vínculos não pode ser excluído. Depois de remover o aluguel, a exclusão do registro de demonstração é permitida.” |
-| 3:35–4:00 | Pesquisa vazia; tamanho de celular; fechar/reabrir tela para mostrar persistência | “A interface informa quando não há resultados. A navegação e os formulários se adaptam a telas pequenas.” |
-| 4:00–4:25 | Wireframes e relatório PDF | “Os wireframes correspondem às telas implementadas. O relatório apresenta a arquitetura, os filtros e as verificações executadas.” |
-| 4:25–4:40 | GitHub com branch/commits e pasta de entrega | “O histórico do TP1 foi preservado. O pacote inclui o código, a documentação e as evidências dos testes.” |
+## Antes de gravar
 
-Antes da gravação: deixe as cinco entidades sem filtros residuais, confirme o banco usado, prepare valores fictícios e abra os arquivos que serão exibidos. Não mostre senhas ou documentos pessoais. Mantenha o vídeo entre 3 e 5 minutos e confira áudio, imagem e link após o envio. Não apresente roteiro ou capturas como se fossem um vídeo já concluído.
+Dê dois cliques em Abrir-Locadora.cmd. No navegador, clique em **Consultas do TP1 →**. Os exemplos originais já estarão carregados no SQL Express. Faça a gravação com microfone no OBS ou outro gravador de tela.
+
+## 0:00–0:45 — problema
+
+“Sou Arthur Nunes Henrique dos Santos e apresento a Locadora de Veículos. Uma locadora precisa saber quais veículos pertencem a cada fabricante e categoria, quem são os clientes e quais aluguéis estão em aberto. Quando essas informações ficam dispersas, fica difícil consultar o histórico e identificar a composição da frota. A proposta é reunir esses dados em uma interface web conectada ao banco, com cadastro, edição, exclusão e pesquisa.”
+
+## 0:45–1:25 — modelagem
+
+“Utilizei o back-end do TP1 em C# com ASP.NET Core e Entity Framework Core, integrado ao SQL Server Express. A modelagem possui cinco entidades: Cliente, Veículo, Fabricante, Categoria e Aluguel. Um fabricante pode ter vários veículos, assim como uma categoria. Um cliente pode ter vários aluguéis e um veículo pode aparecer em vários aluguéis ao longo do tempo. As chaves estrangeiras mantêm esses relacionamentos, e registros vinculados têm sua exclusão protegida.”
+
+Mostre rapidamente o menu com os cinco cadastros. Volte para Consultas do TP1.
+
+## 1:25–2:25 — consulta 1: veículos por fabricante
+
+Selecione **Veículos por fabricante**. No campo Fabricante, escolha **Fabricante Demo Arthur 1210** e clique em **Consultar banco**.
+
+“A primeira consulta responde quais veículos pertencem ao fabricante escolhido. A interface utiliza a rota original de veículos por fabricante. No banco, essa consulta relaciona Veículo e Fabricante por um INNER JOIN, usando a chave estrangeira FabricanteId. O resultado exibe o Veiculo Demo Arthur, com placa TPA1N26, ano 2024 e quilometragem 15000. São dados fictícios reaproveitados do TP1 e consultados no SQL Express, e não uma tabela fixa escrita no HTML. Se eu escolher outro fabricante, o resultado acompanha os dados encontrados no banco.”
+
+## 2:25–3:25 — consulta 2: fabricantes com e sem veículos
+
+Selecione **Fabricantes com e sem veículos**, digite **Demo** no nome e clique em **Consultar banco**.
+
+“A segunda consulta mostra a composição da frota e também fabricantes que ainda não possuem veículos. Ela utiliza a rota original de fabricantes com veículos e um LEFT JOIN. O primeiro fabricante aparece associado ao veículo. Já o Fabricante Demo Sem Veiculo 1210 continua no resultado, com os campos do veículo vazios. Essa é a diferença prática do LEFT JOIN: o fabricante é preservado mesmo sem correspondência. A visualização ajuda a identificar fabricantes que ainda não têm participação na frota cadastrada.”
+
+## 3:25–4:00 — resultados e encerramento
+
+“Além desses exemplos, a interface disponibiliza as consultas originais por categoria, cliente, veículo, período e status. Os filtros dos cadastros permitem pesquisar pelo menos dois campos em cada entidade. O trabalho preserva a API e o histórico do TP1, com persistência real, validações e tratamento de relacionamentos. O código, os wireframes compartilháveis e o relatório no modelo SBC estão no repositório. Obrigado.”
+
+## Conferência final
+
+- Cronometre: a fala e os cliques devem durar entre 3 e 5 minutos; ajuste seu ritmo sem acelerar demais.
+- Confirme que o áudio do microfone foi gravado e que as duas consultas aparecem com resultados legíveis.
+- Não apague os dados de demonstração antes de gravar. O iniciador recupera os exemplos que faltarem sem duplicar os existentes.
+- Envie o vídeo à atividade correspondente do Canvas e o ZIP à entrega do TP2. Confira também o vínculo do seu GitHub com a turma.

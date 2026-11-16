@@ -1,22 +1,22 @@
-# Estado da entrega — 16/11/2026
+# Pronto para gravar — conferência de 16/11/2026
 
-## Concluído e verificado
+| Exigência do enunciado | Situação verificada |
+|---|---|
+| API e artefatos do TP1 | Código, modelos, migrations, histórico e relatório originais preservados |
+| Exemplos fictícios do TP1 nas telas | Dois fabricantes, uma categoria, um cliente, um veículo e um aluguel recuperados do banco original |
+| Cinco CRUDs visuais — 5 pontos | Telas de cadastro, edição, exclusão, listagem e visualização; persistência SQL Express |
+| Filtros e visualizações — 2 pontos | Pelo menos dois campos por entidade e tela para as sete consultas originais do TP1 |
+| Wireframes — 1 ponto | Seis SVGs editáveis, PNGs e link compartilhável no relatório |
+| Relatório | LaTeX e PDF compilado com o estilo SBC |
+| GitHub e ZIP | Commits reais, branch separada, pacote do código e documentação |
+| Abertura no notebook | Abrir-Locadora.cmd testado com servidor desligado; compila, prepara dados e abre navegador |
+| Testes | 81 verificações HTTP de CRUD/filtros + 16 de consultas aprovadas no SQL Express; consultas executadas na tela |
+| Vídeo — 2 pontos | Pendente de gravação e envio; roteiro pronto para pitch de aproximadamente 4 minutos |
 
-- Histórico TP1 preservado em branch original, Git bundle e nova branch TP2.
-- Compilação sem erros.
-- Cinco CRUDs visuais integrados à API original. Cadastro e edição executados pela interface nas cinco entidades.
-- 81 verificações HTTP reais aprovadas no SQL Server Developer e 81 no SQL Server 2022 Express, abrangendo CRUD, filtros individuais e combinados, erros e FK.
-- Confirmação SQL direta de cliente salvo pela tela no Express.
-- Cinco wireframes SVG editáveis e PNGs correspondentes.
-- Layout inspecionado no celular e desktop.
-- Relatório LaTeX usando sbc-template.sty, compilado e revisado visualmente.
-- Roteiro de vídeo com duração prevista de 4min40s.
+## O que fazer antes da entrega
 
-## Para fechar a entrega acadêmica
+1. Gravar a tela com áudio, seguindo docs/roteiro-video.md. O professor pede problema, modelagem e pelo menos duas consultas com resultados. Os trechos fornecidos não exigem câmera/rosto.
+2. Enviar o vídeo à atividade correspondente no Canvas e o ZIP à entrega do TP2.
+3. Conferir o vínculo do perfil GitHub com o repositório da turma, exigência administrativa não verificável só pelos screenshots.
 
-1. Conferir os três screenshots originais da rubrica. Eles não foram disponibilizados como anexos na conversa recuperada.
-2. Confirmar os dados institucionais que o professor exige no cabeçalho do relatório.
-3. Gravar e publicar o vídeo entre 3 e 5 minutos, respeitando a exigência de voz/câmera que constar no enunciado.
-4. Inserir o link do vídeo no relatório e revisar a entrega com base no enunciado.
-
-O ZIP anterior citado na conversa não estava acessível. A implementação atual parte diretamente do repositório original e foi validada nesta sessão. Não há garantia de nota e o vídeo não foi produzido.
+Não foi necessário criar carga de pagamento: o enunciado apresenta carga e pagamento como sugestões de apresentação, não como requisito obrigatório da locadora. A nota final é definida pelo professor; não se fabrica histórico nem se garante pontuação.

@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-16T23:53:54.957Z",
+  "base": "http://localhost:5081",
+  "result": "passed",
+  "checks": [
+    {
+      "path": "fabricantes",
+      "status": 200
+    },
+    {
+      "path": "fabricantes",
+      "status": 200
+    },
+    {
+      "path": "categorias",
+      "status": 200
+    },
+    {
+      "path": "clientes",
+      "status": 200
+    },
+    {
+      "path": "veiculos",
+      "status": 200
+    },
+    {
+      "path": "filtros/veiculos-por-fabricante/2",
+      "status": 200
+    },
+    {
+      "path": "filtros/veiculos-por-categoria/2",
+      "status": 200
+    },
+    {
+      "path": "filtros/alugueis-por-cliente/3",
+      "status": 200
+    },
+    {
+      "path": "filtros/alugueis-por-veiculo/2",
+      "status": 200
+    },
+    {
+      "path": "filtros/alugueis-por-periodo?inicio=2026-10-12T00:00:00&fim=2026-10-13T00:00:00",
+      "status": 200
+    },
+    {
+      "path": "filtros/alugueis-por-status?status=aberto",
+      "status": 200
+    },
+    {
+      "path": "filtros/fabricantes-com-veiculos?nome=Demo",
+      "status": 200
+    },
+    {
+      "path": "filtros/alugueis-por-periodo?inicio=2026-10-15&fim=2026-10-12",
+      "status": 400
+    },
+    {
+      "path": "filtros/alugueis-por-status?status=invalido",
+      "status": 400
+    },
+    {
+      "path": "filtros/veiculos-por-fabricante/0",
+      "status": 400
+    },
+    {
+      "path": "filtros/fabricantes-com-veiculos?nome=INEXISTENTE_TP2",
+      "status": 200
+    }
+  ]
+}
