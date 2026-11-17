@@ -37,6 +37,10 @@ A primeira rodada teve 81 verificações HTTP aprovadas, em SQL Server Developer
 
 Para compilar o PDF: execute `tectonic docs/relatorio.tex` ou use uma distribuição LaTeX compatível.
 
+## Guia de abertura
+
+Consulte **video/Orientacoes-Locadora.pdf** para instruções de início, explicação das telas, exemplos de consultas e solução de problemas.
+
 ## Vídeo e envio
 
 A gravação original recebida acompanha o ZIP de entrega em `video/LocadoraDeVeiculos.mp4`. O vídeo não foi publicado neste repositório; está no pacote local para envio ao Canvas.
@@ -44,3 +48,4 @@ A gravação original recebida acompanha o ZIP de entrega em `video/LocadoraDeVe
 O arquivo foi preservado integralmente por solicitação do autor. Sua duração medida é de **5min56,36s**, superior ao limite de cinco minutos do enunciado. A cópia entregue tem o mesmo SHA-256 do original. As telas mostram a navegação pelos cinco cadastros e as consultas de veículos por fabricante e fabricantes com/sem veículos.
 
 Resta enviar o ZIP e o vídeo às atividades correspondentes do Canvas e conferir o vínculo do GitHub com a turma. A divergência de duração do vídeo permanece registrada, sem alegação de aprovação desse requisito.
+
