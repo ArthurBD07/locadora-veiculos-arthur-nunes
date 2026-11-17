@@ -1,4 +1,4 @@
-# Pronto para gravar — conferência de 16/11/2026
+# Materiais reunidos para entrega — 17/11/2026
 
 | Exigência do enunciado | Situação verificada |
 |---|---|
@@ -11,11 +11,11 @@
 | GitHub e ZIP | Commits reais, branch separada, pacote do código e documentação |
 | Abertura no notebook | Abrir-Locadora.cmd testado com servidor desligado; compila, prepara dados e abre navegador |
 | Testes | 81 verificações HTTP de CRUD/filtros + 16 de consultas aprovadas no SQL Express; consultas executadas na tela |
-| Vídeo — 2 pontos | Pendente de gravação e envio; roteiro pronto para pitch de aproximadamente 4 minutos |
+| Vídeo — 2 pontos | Recebido e incluído no ZIP sem alterações. Duração: 5min56,36s, acima do limite de 5 minutos |
 
 ## O que fazer antes da entrega
 
-1. Gravar a tela com áudio, seguindo docs/roteiro-video.md. O professor pede problema, modelagem e pelo menos duas consultas com resultados. Os trechos fornecidos não exigem câmera/rosto.
+1. O vídeo já foi gravado. Por solicitação do autor, foi mantido com a duração original, sem cortes nem aceleração. A divergência de duração permanece registrada e pode ser considerada na avaliação.
 2. Enviar o vídeo à atividade correspondente no Canvas e o ZIP à entrega do TP2.
 3. Conferir o vínculo do perfil GitHub com o repositório da turma, exigência administrativa não verificável só pelos screenshots.
 

@@ -1,0 +1,38 @@
+{
+  "file": "video/LocadoraDeVeiculos.mp4",
+  "review_date": "2026-11-17",
+  "duration_seconds": 356.36,
+  "required_duration_seconds": [
+    180,
+    300
+  ],
+  "duration_compliant": false,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "video_codec": "H.264",
+  "audio_codec": "AAC",
+  "audio_channels": 2,
+  "audio_sample_rate": 44100,
+  "size_bytes": 36004775,
+  "sha256": "9F3A4A373A26C2E2692B1CAA2A620EA311EB579F02567D2A13512F4BF9A5CBDF",
+  "original_preserved": true,
+  "edits_applied": [],
+  "decode_check": "Full video and audio decoded by FFmpeg without reported errors",
+  "visual_review": [
+    "Clientes",
+    "Fabricantes",
+    "Categorias",
+    "Veículos",
+    "Aluguéis",
+    "Veículos por fabricante com resultado",
+    "Fabricantes com e sem veículos com resultado"
+  ],
+  "audio_levels_dbfs": {
+    "mean": -28.9,
+    "peak": -7.6
+  },
+  "decision": "Autor solicitou preservar duração e não alterar o vídeo"
+}
